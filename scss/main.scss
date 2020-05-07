@@ -1,0 +1,75 @@
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+
+//
+// Grid mixins
+//
+
+@import "bootstrap/mixins/breakpoints";
+
+
+// including variables and mixins
+@import "theme/variables";
+@import "theme/mixins";
+@import "theme/flexbox";
+@import "theme/reset";
+
+
+// Custom Scss 
+@import "theme/elements";
+@import "theme/header";
+@import "theme/home";
+@import "theme/footer";
+@import "theme/_variables.scss";
+
+.about-image {
+	max-height: 500px;
+	padding:  0;
+	width: 85%;
+}
+
+.counter {
+	font-weight: 300 !important;
+}
+
+.opbgc {
+	background: $opbgc;
+}
+
+input, 
+textarea {
+	font-size: 16px;
+	background-color:rgba(#fff, .2) !important;
+}
+
+.fw300 {
+	font-weight: 300 !important;
+}
+
+.feature-area .icon {
+	min-height: 150px;
+}
+
+.price {
+	text-align: right;
+	font-size: 15px;
+	color: black;
+	display: block;
+	margin-top: 30px;
+}
+
+
+.hauto {
+	height: 100vh !important;
+}
+
+@media screen and (max-width: 992px) {
+	.md-dis {
+		display: none;
+	}
+	
+	.hauto {
+		height: auto !important;
+	}
+}
