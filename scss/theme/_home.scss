@@ -15,7 +15,6 @@ body{
 		margin: 10px;
 	}
 }
-
 .section-gap {
 	padding: 100px 0;
 }
@@ -250,6 +249,14 @@ body{
 			background: rgba($primary-color, .85);
 		}
 		.icon{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: center;
+			-ms-align-items: center;
+			align-items: center;
 			font-size: 100px;
 			color:$white;
 			background: #f0f8e9;
@@ -263,7 +270,13 @@ body{
 					color:#fff;
 				}
 			}
+			img {
+				display: block;
+				width: 250px;
+				justify-content: center;
+			}
 		}
+
 		.lnr{
 			color:$primary-color;
 		}

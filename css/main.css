@@ -2135,6 +2135,13 @@ body {
 }
 
 .feature-area .icon {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
     font-size: 100px;
     color: #fff;
     background: #f0f8e9;
@@ -2150,6 +2157,12 @@ body {
 
 .feature-area .icon:hover .lnr {
     color: #fff;
+}
+
+.feature-area .icon img {
+    display: block;
+    width: 250px;
+    justify-content: center;
 }
 
 .feature-area .lnr {
